@@ -1,7 +1,0 @@
-{
-  "hosting": {
-    "public": "build/web",
-    "site": "flutreecreate",
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
-  }
-}

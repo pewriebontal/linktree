@@ -1,38 +1,21 @@
-name: linktree_iqfareez_flutter
-description: Flutree project.
+name: linktree
+description: pewriebontal's linktree.
 
 publish_to: "none"
 
-version: 3.9.41+24
+version: 1.0.2
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-
+  cupertino_icons: ^1.0.2
+  url_launcher: ^6.0.2
   google_fonts: ^2.0.0
   font_awesome_flutter: ^9.0.0
-  url_launcher: ^6.0.3
   dough: ^1.0.1
-  fluttertoast: ^8.0.6
-  giffy_dialog: ^1.8.0
-  firebase_core: ^1.0.4
-  google_mobile_ads: ^0.13.0
-  firebase_auth: ^1.1.1
-  google_sign_in: ^5.0.2
-  cloud_firestore: ^2.2.0
-  firebase_storage: ^8.0.4
-  firebase_analytics: ^8.0.2
-  firebase_dynamic_links: ^2.0.2
-  image_picker: ^0.8.0+3
-  dotted_border: ^2.0.0
-  share_plus: ^2.0.1
-  package_info_plus: ^1.0.0
-  qr_flutter: ^4.0.0
-  dio: ^4.0.0
-  get_storage: ^2.0.2
 
 dev_dependencies:
   flutter_test:
@@ -40,9 +23,5 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-
   assets:
-    - images/sample.jpg
-    - images/intro.gif
-    - images/logo/
-    - images/devices.png
+    - assets/images/profile.png

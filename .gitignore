@@ -14,6 +14,7 @@
 *.ipr
 *.iws
 .idea/
+/out/
 
 # The .vscode folder contains launch configuration and tasks you configure in
 # VS Code which you may wish to be included in version control, so this line
@@ -40,11 +41,8 @@ app.*.symbols
 # Obfuscation related
 app.*.map.json
 
-# Exceptions to above rules.
-!/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
-
-# password
-key.properties
-
-# some private key (admob etc)
-PRIVATE.dart
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+.last_build_id

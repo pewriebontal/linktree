@@ -1,90 +1,91 @@
+<!---                         _      _                 _        _
+                             (_)    | |               | |      | |
+     _ __   _____      ___ __ _  ___| |__   ___  _ __ | |_ __ _| |
+    | '_ \ / _ \ \ /\ / / '__| |/ _ \ '_ \ / _ \| '_ \| __/ _` | |
+    | |_) |  __/\ V  V /| |  | |  __/ |_) | (_) | | | | || (_| | |
+    | .__/ \___| \_/\_/ |_|  |_|\___|_.__/ \___/|_| |_|\__\__,_|_|
+    | |
+    |_|
+  
+--->
+
 <!DOCTYPE html>
 <html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
 
-  <!-- Primary Meta Tags -->
-  <title>Flutree Create - A place for all of your social links</title>
-  <meta name="title" content="Flutree - A place for all of your social links">
-  <meta name="description"
-    content="Let your audiences find you in one place. Flutree is an app that let you create, manage, publish a colourful links page to the world! ">
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://flutreecreate.web.app/">
-  <meta property="og:title" content="Flutree - A place for all of your social links">
-  <meta property="og:description" content="Let your audiences find you in one place. ">
-  <meta property="og:image" content="https://flutreecreate.web.app/static/flutcreate-meta.png">
+    Fore more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+  -->
+  <base href="/linktree/" />
 
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://flutreecreate.web.app/">
-  <meta property="twitter:title" content="Flutree - A place for all of your social links">
-  <meta property="twitter:description"
-    content="Let your audiences find you in one place. Flutree is an app that let you create, manage, publish a colourful links page to the world! ">
-  <meta property="twitter:image" content="https://flutreecreate.web.app/static/flutcreate-meta.png">
+  <meta charset="UTF-8" />
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+  <meta name="description" content="pewriebontal's linktree" />
+  <link rel="canonical" href="https://pewriebontal.github.io/linktree" />
 
-  <!-- https://github.com/flutter/plugins/blob/master/packages/google_sign_in/google_sign_in_web/README.md#web-integration-->
-  <meta name="google-signin-client_id"
-    content="385807044061-o8aupgo6sirg8624nho36r451p4s14vg.apps.googleusercontent.com">
+  <!-- SEO related -->
+  <title>Linktree | pewriebontal</title>
+  <meta name="description" content="pewriebontal's linktree made with ❤, powered by Flutter" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="keywords" content="pewriebontal, linktree, min thu khine, pewpew, pewrie, bontal, social, flutter" />
+
+  <!-- Tracking codes-->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XZ98J4L1Y5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-XZ98J4L1Y5');
+  </script>
 
   <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="flutree">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="apple-mobile-web-app-title" content="linktree" />
+  <link rel="apple-touch-icon" href="icons/Icon-192.png" />
 
   <!-- Favicon -->
-  <link rel="shortcut icon" type="image/png" href="favicon.png" />
+  <link rel="icon" type="image/png" href="favicon.png" />
 
-  <link rel="manifest" href="manifest.json">
+  <!-- Preload -->
+  <link rel="preload" href="favicon.png" as="image" />
+  <link rel="preload" href="assets/assets/images/profile.png" as="image" />
+  <link rel="preload" href="icons/Icon-192.png" as="image" />
+  <link rel="preload" href="icons/Icon-512.png" as="image" />
+
+  <link rel="preload" href="flutter_service_worker.js" as="worker">
+
+  <link rel="preload" href="assets/fonts/MaterialIcons-Regular.otf" as="font" />
+  <link rel="preload" href="assets/packages/cupertino_icons/assets/CupertinoIcons.ttf" as="font" />
+  <link rel="preload" href="assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf" as="font" />
+  <link rel="preload" href="assets/packages/font_awesome_flutter/lib/fonts/fa-regular-400.ttf" as="font" />
+  <link rel="preload" href="assets/packages/font_awesome_flutter/lib/fonts/fa-solid-900.ttf" as="font" />
+
+  <link rel="preload" href="main.dart.js" as="script">
+
 </head>
 
 <body>
   <!-- This script installs service_worker.js to provide PWA functionality to
-       application. For more information, see:
-       https://developers.google.com/web/fundamentals/primers/service-workers -->
+	       application. For more information, see:
+	       https://developers.google.com/web/fundamentals/primers/service-workers -->
   <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js');
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("flutter-first-frame", function () {
+        navigator.serviceWorker.register("flutter_service_worker.js");
       });
     }
   </script>
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
-
-  <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
-
-  <!-- Initialize Firebase -->
-  <script>
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    var firebaseConfig = {
-      apiKey: "AIzaSyAJygwdQgzuR2xEf53BZOCQ_NMZWNNrU0I",
-      authDomain: "linktree-clone-flutter.firebaseapp.com",
-      databaseURL: "https://linktree-clone-flutter.firebaseio.com",
-      projectId: "linktree-clone-flutter",
-      storageBucket: "linktree-clone-flutter.appspot.com",
-      messagingSenderId: "385807044061",
-      appId: "1:385807044061:web:89cb2bc840fac22b6eba34",
-      measurementId: "G-2GMSSJYK37"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    firebase.analytics();
-  </script>
-
-
-
   <script src="main.dart.js" type="application/javascript"></script>
-
 </body>
 
 </html>

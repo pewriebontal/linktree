@@ -1,28 +1,14 @@
-# Flutree
+# linktree
+ pewriebontal's Linktree,
+ Forked from [iqfareez](https://github.com/iqfareez)
 
-![Works with Android](https://img.shields.io/badge/Works_with-Android-green?style=flat-square)
-![Ready on PWA](https://img.shields.io/badge/Ready%20on-PWA-5a0fc8)
-![Maintenance](https://img.shields.io/maintenance/yes/2021?style=flat-square)
-![Installs](https://img.shields.io/badge/installs-40k+-orange)
-![Twitter Follow](https://img.shields.io/twitter/follow/iqfareez?label=Follow&style=social)
+## Getting Started
 
-Your personalized social cards. Put your social medias link in one place. Easy peasy!
+A few resources to get you started if this is your first Flutter project:
 
-## Download on [Google Play Store](https://play.google.com/store/apps/details?id=com.iqmal.linktreeflutter)
+- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-## Flutree Create
-
-[flutreecreate.web.app](https://flutreecreate.web.app) or [flutree.studio](https://flutree.studio)
-
-## Devlog
-
-- [Part 1](https://www.instagram.com/s/aGlnaGxpZ2h0OjE4MTUzMDA3Njg0MTgyODA3)
-- [Part 2](https://www.instagram.com/s/aGlnaGxpZ2h0OjE3ODg1MzE2ODMzMjE5MDg5)
-
-## To build for yourself
-
-1. [Setup Flutter](https://flutter.dev/docs/get-started/install)
-2. My usually used command : `flutter clean; flutter build web --web-renderer html --pwa-strategy=none; firebase deploy -m "3.9.41+24"; flutter build appbundle; gh release create 3.9.41+24`
-
-\
-:star::star::star::star::star:
+For help getting started with Flutter, view our
+[online documentation](https://flutter.dev/docs), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
