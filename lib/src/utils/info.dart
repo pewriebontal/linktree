@@ -1,19 +1,15 @@
 library constants;
 
-//alias a.k.a username
 const kAlias = 'pewriebontal';
-
-//subtitle a.k.a bio (eg: places, company, poems etc.)
 const kShowSubtitleText = true;
-const kSubtitle = 'a baked sweet potato';
+const kSubtitle = 'a baked sweet potato.';
 
 //Network image Url
 //const kImageUrl = 'http://example.com/example.jpg';
 
-//Social media links
-//replace with yours
 const kAngelYoutubeUrl = 'https://youtu.be/9tB3XPoWCBo';
-const kHomePageUrl = 'http://pewriebontal.github.io';
+const kHomePageUrl = 'http://pewriebontal.ml';
+const kBlogUrl = 'http://blog.pewriebontal.ml';
 const kTwitterUrl = 'http://twitter.com/pewriebontal';
 const kInstagramUrl = 'http://instagram.com/pewriebontal';
 const kLinkedinUrl = 'https://www.linkedin.com/in/pewriebontal';

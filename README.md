@@ -1,6 +1,7 @@
-# linktree
- pewriebontal's Linktree,
- Forked from [iqfareez](https://github.com/iqfareez)
+# quicklinks
+
+ Collections of Links.
+ a fork of [Flutree](https://github.com/iqfareez/flutree)
 
 ## Getting Started
 

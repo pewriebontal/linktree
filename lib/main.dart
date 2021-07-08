@@ -1,11 +1,12 @@
-//
+////////////////////////////////////////////////////////
 //  Copyright (c) 2020-2021 pewriebontal
-//  https://pewriebontal.github.io
+//  https://pewriebontal.ml
+//  LICENSED UNDER MIT.
 //
 
 import 'package:flutter/material.dart';
-import 'package:linktree/src/index.dart';
+import 'package:quicklinks/src/app.dart';
 
 void main() {
-  runApp(Index());
+  runApp(const App());
 }

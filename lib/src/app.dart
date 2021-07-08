@@ -1,18 +1,20 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:linktree/src/ui/pages/indexpage.dart';
+import 'package:quicklinks/src/ui/pages/indexpage.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class Index extends StatelessWidget {
+class App extends StatelessWidget {
+  const App({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Linktree | pewriebontal',
+      title: 'Quicklinks | pewriebontal',
       theme: ThemeData(
         primarySwatch: Colors.purple,
         textTheme: GoogleFonts.karlaTextTheme(),
       ),
-      home: IndexPage(),
+      home: const IndexPage(),
     );
   }
 }

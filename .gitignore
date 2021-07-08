@@ -1,3 +1,11 @@
+# Using only web
+android/
+ios/
+linux/
+macos/
+windows/
+winuwp/
+
 # Miscellaneous
 *.class
 *.log
@@ -14,7 +22,6 @@
 *.ipr
 *.iws
 .idea/
-/out/
 
 # The .vscode folder contains launch configuration and tasks you configure in
 # VS Code which you may wish to be included in version control, so this line
@@ -45,4 +52,3 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
-.last_build_id

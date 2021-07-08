@@ -1,12 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:linktree/src/core/launcher.dart';
+import 'package:quicklinks/src/core/launcher.dart';
 import 'package:dough/dough.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-///This linkcard will be the one showing in appPage
 class LinkCard extends StatelessWidget {
-  LinkCard({this.icon, this.title, this.url, this.color});
+  const LinkCard({Key? key, this.icon, this.title, this.url, this.color}) : super(key: key);
   final IconData? icon;
   final String? title;
   final String? url;
@@ -19,7 +18,7 @@ class LinkCard extends StatelessWidget {
         child: InkWell(
           splashColor: Colors.black.withAlpha(50),
           onTap: () {
-            launchURL(url!);
+            launchURL(url!+'?utm_source=quicklinks'); // Learn more about utm parameters @ http://wikipedia.org/wiki/UTM_parameters
           },
 //          onLongPress: () {
 //            showAboutDialog(context: context);      ///ignore zombie codes
@@ -32,9 +31,9 @@ class LinkCard extends StatelessWidget {
             title: Text(
               title!,
               textAlign: TextAlign.center,
-              style: TextStyle(color: Colors.white),
+              style: const TextStyle(color: Colors.white),
             ),
-            trailing: Icon(null),
+            trailing: const Icon(null),
           ),
         ),
       ),
