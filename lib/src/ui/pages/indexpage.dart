@@ -32,8 +32,8 @@ class IndexPage extends StatelessWidget {
       floatingActionButtonLocation: FloatingActionButtonLocation.endDocked,
       bottomNavigationBar: Text(
         showCopyrightText
-            ? 'Made with Flutter\n and other open source software.\n${constants.kCopyright}\n'
-            : 'Made with Flutter\n and other open source software.\n\n',
+            ? 'Made with Flutter\n and other open source softwares.\n${constants.kCopyright}\n'
+            : 'Made with Flutter\n and other open source softwares.\n\n',
         textAlign: TextAlign.center,
         style: const TextStyle(fontSize: 11),
       ),
