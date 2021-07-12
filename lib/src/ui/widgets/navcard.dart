@@ -1,14 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:quicklinks/src/core/launcher.dart';
 import 'package:dough/dough.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class LinkCard extends StatelessWidget {
-  const LinkCard({Key? key, this.icon, this.title, this.url, this.color}) : super(key: key);
+class NavCard extends StatelessWidget {
+  const NavCard({Key? key, this.icon, this.title, this.des, this.color}) : super(key: key);
   final IconData? icon;
   final String? title;
-  final String? url;
+  final String? des;
   final Color? color;
   @override
   Widget build(BuildContext context) {
@@ -18,7 +17,7 @@ class LinkCard extends StatelessWidget {
         child: InkWell(
           splashColor: Colors.black.withAlpha(50),
           onTap: () {
-            launchURL(url!+'?utm_source=quicklinks'); // Learn more about utm parameters @ http://wikipedia.org/wiki/UTM_parameters
+            Navigator.pushNamed(context, des!);
           },
           child: ListTile(
             leading: FaIcon(

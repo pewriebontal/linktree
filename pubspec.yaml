@@ -14,6 +14,7 @@ dependencies:
   google_fonts: ^2.1.0
   font_awesome_flutter: ^9.1.0
   dough: ^1.0.1
+  fluentui_system_icons: ^1.1.134
 
 dev_dependencies:
   flutter_test:

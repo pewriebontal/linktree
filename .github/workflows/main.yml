@@ -20,7 +20,7 @@ jobs:
     - run: flutter config --enable-web
     - run: flutter pub get
 #    - run: flutter test
-    - run: flutter build web
+    - run: flutter build web --web-renderer canvaskit --release
     
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@4.1.0

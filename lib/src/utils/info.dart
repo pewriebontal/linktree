@@ -4,6 +4,7 @@ const kAlias = 'pewriebontal';
 const kShowSubtitleText = true;
 const kSubtitle = 'a baked sweet potato.';
 
+const kSourceCodeUrl = 'https://github.com/pewriebontal/quicklinks';
 //Network image Url
 //const kImageUrl = 'http://example.com/example.jpg';
 
