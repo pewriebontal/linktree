@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:dough/dough.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:quicklinks/src/core/launcher.dart';
+import 'package:quicklinks/src/ui/widgets/linkcard.dart';
 import 'package:quicklinks/src/utils/info.dart' as constants;
 // ignore: unused_import
 import 'package:quicklinks/src/core/hex2color.dart';
@@ -34,12 +35,12 @@ class HomePage extends StatelessWidget {
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.endDocked,
       bottomNavigationBar: TextButton(
-          onPressed: () => showAboutDialog(context: (context)),
-          child: const Text(
-            'Made with Flutter\n and other open source softwares.\n${constants.kCopyright}',
-            textAlign: TextAlign.center,
-            style: TextStyle(fontSize: 11),
-          ),
+        onPressed: () => showAboutDialog(context: (context)),
+        child: const Text(
+          'Made with Flutter\n and other open source softwares.\n${constants.kCopyright}',
+          textAlign: TextAlign.center,
+          style: TextStyle(fontSize: 11),
+        ),
       ),
       backgroundColor: Colors.white,
     );
@@ -85,6 +86,12 @@ class BodyHome extends StatelessWidget {
                   : const SizedBox.shrink(),
               const SizedBox(
                 height: 25.0,
+              ),
+              LinkCard(
+                icon: FontAwesomeIcons.handsHelping,
+                title: 'Search Oxygen Nearby',
+                url: 'https://mmcovid.glideapp.io',
+                color: Colors.red.shade600,
               ),
               NavCard(
                   icon: FluentIcons.globe_32_filled,
