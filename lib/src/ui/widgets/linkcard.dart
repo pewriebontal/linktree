@@ -18,7 +18,7 @@ class LinkCard extends StatelessWidget {
         child: InkWell(
           splashColor: Colors.black.withAlpha(50),
           onTap: () {
-            launchURL(url!+'?utm_source=quicklinks'); // Learn more about utm parameters @ http://wikipedia.org/wiki/UTM_parameters
+            launchURL(url!+'?utm_source=links.pewriebontal.ml');
           },
           child: ListTile(
             leading: FaIcon(

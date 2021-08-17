@@ -10,7 +10,7 @@ class App extends StatelessWidget {
     return MaterialApp(
       title: 'Quicklinks by pewriebontal',
       theme: ThemeData(
-        primarySwatch: Colors.purple,
+        primarySwatch: Colors.blue,
         textTheme: GoogleFonts.karlaTextTheme(),
       ),
       onGenerateRoute: route.controller,

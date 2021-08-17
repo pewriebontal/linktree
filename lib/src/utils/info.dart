@@ -17,10 +17,10 @@ const kLinkedinUrl = 'https://www.linkedin.com/in/pewriebontal';
 const kTumblrUrl = 'http://pewriebontal.tumblr.com';
 const kMediumUrl = 'http://pewriebontal.medium.com';
 const kGitHubUrl = 'http://github.com/pewriebontal';
-const kOnlyFansUrl = 'https://youtu.be/dQw4w9WgXcQ';
+const kOnlyFansUrl = 'https://youtu.be/ZZiHi72hFFo';
 const kCRPHUrl = 'https://donate.crphmyanmar.org';
 const kNewUrl = "Add more";
 
 //copyright information
 const kShowCopyrightText = true;
-const kCopyright = '© pewriebontal 2020-2021';
+const kCopyright = '© Pewrie Bontal - 2020-2021';
