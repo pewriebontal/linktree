@@ -5,6 +5,7 @@ import 'package:dough/dough.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:quicklinks/src/core/launcher.dart';
 import 'package:quicklinks/src/ui/widgets/linkcard.dart';
+import 'package:quicklinks/src/ui/widgets/footer.dart';
 import 'package:quicklinks/src/utils/info.dart' as constants;
 // ignore: unused_import
 import 'package:quicklinks/src/core/hex2color.dart';
@@ -12,7 +13,6 @@ import 'package:quicklinks/src/ui/widgets/navcard.dart';
 import 'package:quicklinks/src/core/route.dart' as route;
 
 class HomePage extends StatelessWidget {
-  final bool showCopyrightText = constants.kShowCopyrightText;
 
   const HomePage({Key? key}) : super(key: key);
   @override
@@ -34,14 +34,7 @@ class HomePage extends StatelessWidget {
         ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.endDocked,
-      bottomNavigationBar: TextButton(
-        onPressed: () => showAboutDialog(context: (context)),
-        child: const Text(
-          'Made with Flutter\n and other open source softwares.\n${constants.kCopyright}',
-          textAlign: TextAlign.center,
-          style: TextStyle(fontSize: 11),
-        ),
-      ),
+      bottomNavigationBar: const Footer(),
       backgroundColor: Colors.white,
     );
   }

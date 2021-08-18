@@ -1,0 +1,22 @@
+import 'package:flutter/material.dart';
+import 'package:quicklinks/src/utils/info.dart' as constants;
+
+class Footer extends StatelessWidget {
+  final bool showCopyrightText = constants.kShowCopyrightText;
+
+  const Footer({Key? key}) : super(key: key);
+  @override
+
+  Widget build(BuildContext context) {
+    return TextButton(
+        onPressed: () => showAboutDialog(context: (context)),
+        child: Text(
+        showCopyrightText
+            ? '\nMade with Flutter\n and other open source softwares.\n${constants.kCopyright}\n'
+            : '\nMade with Flutter\n and other open source softwares.\n\n',
+        textAlign: TextAlign.center,
+        style: const TextStyle(fontSize: 11),
+      ),
+    );
+  }
+}

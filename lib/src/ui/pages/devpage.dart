@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:dough/dough.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:quicklinks/src/core/launcher.dart';
+import 'package:quicklinks/src/ui/widgets/footer.dart';
 import 'package:quicklinks/src/utils/info.dart' as constants;
 import 'package:quicklinks/src/core/route.dart' as route;
 import 'package:quicklinks/src/ui/widgets/navcard.dart';
@@ -33,13 +34,7 @@ class DevPage extends StatelessWidget {
         ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.endDocked,
-      bottomNavigationBar: Text(
-        showCopyrightText
-            ? 'Made with Flutter\n and other open source softwares.\n${constants.kCopyright}\n'
-            : 'Made with Flutter\n and other open source softwares.\n\n',
-        textAlign: TextAlign.center,
-        style: const TextStyle(fontSize: 11),
-      ),
+      bottomNavigationBar: const Footer(),
       backgroundColor: Colors.white,
     );
   }
