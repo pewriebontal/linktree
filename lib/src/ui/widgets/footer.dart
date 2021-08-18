@@ -12,8 +12,8 @@ class Footer extends StatelessWidget {
         onPressed: () => showAboutDialog(context: (context)),
         child: Text(
         showCopyrightText
-            ? '\nMade with Flutter\n and other open source softwares.\n${constants.kCopyright}\n'
-            : '\nMade with Flutter\n and other open source softwares.\n\n',
+            ? 'Made with Flutter\n and other open source softwares.\n${constants.kCopyright}\n'
+            : 'Made with Flutter\n and other open source softwares.\n\n',
         textAlign: TextAlign.center,
         style: const TextStyle(fontSize: 11),
       ),
