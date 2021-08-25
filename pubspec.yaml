@@ -14,12 +14,12 @@ dependencies:
   google_fonts: ^2.1.0
   font_awesome_flutter: ^9.1.0
   dough: ^1.0.1
-  fluentui_system_icons: ^1.1.134
+  fluentui_system_icons: ^1.1.136
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^1.0.0
+  flutter_lints: ^1.0.4
 
 flutter:
   uses-material-design: true

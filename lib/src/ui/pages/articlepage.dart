@@ -7,9 +7,6 @@ import 'package:quicklinks/src/ui/widgets/footer.dart';
 import 'package:quicklinks/src/ui/widgets/navcard.dart';
 import 'package:quicklinks/src/utils/info.dart' as constants;
 import 'package:quicklinks/src/core/route.dart' as route;
-
-// ignore: unused_import
-import 'package:quicklinks/src/core/hex2color.dart';
 import 'package:quicklinks/src/ui/widgets/linkcard.dart';
 
 class ArticlePage extends StatelessWidget {
